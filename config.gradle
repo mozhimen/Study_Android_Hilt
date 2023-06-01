@@ -1,0 +1,11 @@
+ext {
+    android = [
+            compileSdk           : 33,
+            namespace            : 'com.mozhimen.study_hilt',
+            applicationId        : 'com.mozhimen.study_hilt',
+            minSdk               : 24,
+            targetSdk            : 33,
+            versionCode          : 1,
+            versionName          : "0.0.1",
+    ]
+}
