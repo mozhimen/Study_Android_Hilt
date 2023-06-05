@@ -32,22 +32,34 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        dataBinding true
+    }
 }
 
 dependencies {
 
-    implementation "com.google.dagger:hilt-android:2.44"
-    kapt "com.google.dagger:hilt-compiler:2.44"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.10"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10"
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.activity:activity-ktx:1.7.2'
 
-    implementation libs.core.ktx
-    implementation libs.appcompat
-    implementation libs.material
-    implementation libs.constraintlayout
+    //hilt
+    implementation 'com.google.dagger:hilt-android:2.46.1'
+    kapt 'com.google.dagger:hilt-compiler:2.46.1'
+//    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03'
+//    kapt 'androidx.hilt:hilt-compiler:1.0.0'
+
+    //lifecycle
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
 
     //test
-    testImplementation libs.junit
-    androidTestImplementation libs.androidx.test.ext.junit
-    androidTestImplementation libs.espresso.core
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
 kapt {
