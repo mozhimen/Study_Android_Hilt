@@ -18,6 +18,5 @@ dependencyResolutionManagement {
     }
 }
 
-
-rootProject.name = "Study-hilt"
+rootProject.name = "Study-Hilt"
 include ':app'
