@@ -18,7 +18,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Study-hilt"
+rootProject.name = "Study-Hilt"
 include ':app'
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("C:\\Users\\83524\\Documents\\GitHub\\SwiftKit")
