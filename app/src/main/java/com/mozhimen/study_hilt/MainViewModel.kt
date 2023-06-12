@@ -12,4 +12,6 @@ import javax.inject.Inject
  * @Version 1.0
  */
 @HiltViewModel
-class MainViewModel @Inject constructor() : BaseViewModel()
+class MainViewModel @Inject constructor(private val _repository: Repository) : BaseViewModel() {
+    fun getString(): String = _repository.getString()
+}

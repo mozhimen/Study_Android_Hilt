@@ -1,24 +1,14 @@
 package com.mozhimen.study_hilt
 
-import dagger.Module
-import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ViewModelComponent
-import dagger.hilt.android.scopes.ViewModelScoped
+import javax.inject.Inject
 
 /**
  * @ClassName Repository
  * @Description TODO
- * @Author Mozhimen & Kolin Zhao
- * @Date 2023/6/12 17:49
+ * @Author Mozhimen / Kolin Zhao
+ * @Date 2023/6/12 22:13
  * @Version 1.0
  */
-@Module
-@InstallIn(ViewModelComponent::class)
 class Repository {
-
-    @ViewModelScoped
-    @Provides
-    fun provideTest(): String =
-        "hello"
+    fun getString(): String = "456"
 }
