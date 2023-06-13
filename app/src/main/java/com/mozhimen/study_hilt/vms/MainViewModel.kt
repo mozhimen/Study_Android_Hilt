@@ -1,10 +1,12 @@
-package com.mozhimen.study_hilt
+package com.mozhimen.study_hilt.vms
 
 import com.mozhimen.basick.elemk.viewmodel.bases.BaseViewModel
 import com.mozhimen.study_hilt.commons.IGetValueListener
 import com.mozhimen.study_hilt.helpers.CacheRepository
 import com.mozhimen.study_hilt.helpers.RemoteRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
 /**
@@ -19,5 +21,7 @@ class MainViewModel @Inject constructor(private val _cacheRepository: CacheRepos
     BaseViewModel() {
     fun getCache(): String = _cacheRepository.getCache()
     fun getRemote(): String = _remoteRepository.getRemote()
-    fun getValue(): String = _getValueListener.onGetValue()
+
+    private val _msfValue = MutableStateFlow(_getValueListener.onGetValue())
+    val sfValue: StateFlow<String> = _msfValue
 }

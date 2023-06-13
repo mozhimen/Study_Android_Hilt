@@ -3,32 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data />
+    <data>
+
+        <variable
+            name="vm"
+            type="com.mozhimen.study_hilt.vms.MainViewModel" />
+    </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".uis.MainActivity">
 
         <TextView
             android:id="@+id/main_txt"
             style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
-            tools:text="Hello World!"/>
+            tools:text="Hello World!" />
 
         <TextView
             android:id="@+id/main_txt1"
             style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
-            tools:text="Hello World!"/>
+            tools:text="Hello World!" />
 
         <TextView
             android:id="@+id/main_txt2"
             style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
-            tools:text="Hello World!"/>
+            tools:text="Hello World!" />
 
         <TextView
             android:id="@+id/main_txt3"
             style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
-            tools:text="Hello World!"/>
+            android:text="@{vm.sfValue}" />
+
     </LinearLayout>
 </layout>
