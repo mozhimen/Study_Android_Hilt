@@ -1,6 +1,4 @@
-package com.mozhimen.study_hilt
-
-import javax.inject.Inject
+package com.mozhimen.study_hilt.helpers
 
 /**
  * @ClassName Repository
@@ -9,6 +7,6 @@ import javax.inject.Inject
  * @Date 2023/6/12 22:13
  * @Version 1.0
  */
-class Repository {
-    fun getString(): String = "456"
+class CacheRepository {
+    fun getCache(): String = "456"
 }

@@ -10,6 +10,7 @@
           <set>
             <option value="$USER_HOME$/Documents/GitHub/SwiftKit" />
             <option value="$USER_HOME$/Documents/GitHub/SwiftKit/basick" />
+            <option value="$USER_HOME$/Documents/GitHub/SwiftKit/uicorek" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
           </set>

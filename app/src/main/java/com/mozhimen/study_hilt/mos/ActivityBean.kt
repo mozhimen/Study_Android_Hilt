@@ -1,4 +1,4 @@
-package com.mozhimen.study_hilt
+package com.mozhimen.study_hilt.mos
 
 import dagger.hilt.android.scopes.ActivityScoped
 import javax.inject.Inject
@@ -11,7 +11,7 @@ import javax.inject.Inject
  * @Version 1.0
  */
 @ActivityScoped
-class Bean constructor(val name: String) {
+class ActivityBean constructor(val name: String) {
     @Inject
     constructor() : this("123")
 }

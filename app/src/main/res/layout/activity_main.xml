@@ -13,14 +13,22 @@
 
         <TextView
             android:id="@+id/main_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
             tools:text="Hello World!"/>
 
         <TextView
             android:id="@+id/main_txt1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
+            tools:text="Hello World!"/>
+
+        <TextView
+            android:id="@+id/main_txt2"
+            style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
+            tools:text="Hello World!"/>
+
+        <TextView
+            android:id="@+id/main_txt3"
+            style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
             tools:text="Hello World!"/>
     </LinearLayout>
 </layout>

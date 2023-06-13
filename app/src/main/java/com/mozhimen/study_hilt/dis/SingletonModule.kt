@@ -1,7 +1,6 @@
-package com.mozhimen.study_hilt.di
+package com.mozhimen.study_hilt.dis
 
-import com.mozhimen.study_hilt.Repository
-import dagger.Binds
+import com.mozhimen.study_hilt.helpers.CacheRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,9 +16,9 @@ import javax.inject.Singleton
  */
 @Module
 @InstallIn(SingletonComponent::class)
-class MainModuleAbs {
+class SingletonModule {
 
     @Singleton
     @Provides
-    fun provideRepository(): Repository = Repository()
+    fun provideCacheRepository(): CacheRepository = CacheRepository()
 }
