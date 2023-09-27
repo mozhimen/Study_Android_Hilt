@@ -10,6 +10,5 @@ import javax.inject.Inject
  * @Version 1.0
  */
 class GetValueCallback @Inject constructor() : IGetValueListener {
-
     override fun onGetValue(): String = "这是@Bind的实践"
 }
