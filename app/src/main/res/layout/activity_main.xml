@@ -18,23 +18,27 @@
 
         <TextView
             android:id="@+id/main_txt"
-            style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
+            style="@style/StyleK_Txt.Font_Sans_Serif.Gravity_Center.Style_Norm.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
             tools:text="Hello World!" />
 
         <TextView
             android:id="@+id/main_txt1"
-            style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
+            style="@style/StyleK_Txt.Font_Sans_Serif.Gravity_Center.Style_Norm.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
             tools:text="Hello World!" />
 
         <TextView
             android:id="@+id/main_txt2"
-            style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
+            style="@style/StyleK_Txt.Font_Sans_Serif.Gravity_Center.Style_Norm.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
             tools:text="Hello World!" />
 
         <TextView
             android:id="@+id/main_txt3"
-            style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
+            style="@style/StyleK_Txt.Font_Sans_Serif.Gravity_Center.Style_Norm.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
             android:text="@{vm.sfValue}" />
 
+        <TextView
+            android:id="@+id/main_txt4"
+            style="@style/StyleK_Txt.Font_Sans_Serif.Gravity_Center.Style_Norm.Color_Gray_999.Size_014.Width_Wrap.Height_Wrap"
+            android:text="@{vm.liveTest}" />
     </LinearLayout>
 </layout>

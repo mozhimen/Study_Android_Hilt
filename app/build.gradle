@@ -34,6 +34,12 @@ android {
     buildFeatures {
         dataBinding true
     }
+    hilt {
+        enableAggregatingTask = true
+    }
+    kapt {
+        correctErrorTypes true
+    }
 }
 
 dependencies {

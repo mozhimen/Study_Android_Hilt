@@ -1,5 +1,7 @@
 package com.mozhimen.study_hilt.helpers
 
+import javax.inject.Inject
+
 /**
  * @ClassName Repository
  * @Description TODO
@@ -8,5 +10,7 @@ package com.mozhimen.study_hilt.helpers
  * @Version 1.0
  */
 class RemoteRepository {
+    @Inject constructor()
+
     fun getRemote(): String = "789"
 }

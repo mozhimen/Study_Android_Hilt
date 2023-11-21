@@ -8,9 +8,9 @@
         <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
         <option name="modules">
           <set>
-            <option value="C:/Users/83524/Documents/GitHub/SwiftKit" />
-            <option value="C:/Users/83524/Documents/GitHub/SwiftKit/basick" />
-            <option value="C:/Users/83524/Documents/GitHub/SwiftKit/uicorek" />
+            <option value="$USER_HOME$/Documents/GitHub/SwiftKit" />
+            <option value="$USER_HOME$/Documents/GitHub/SwiftKit/basick" />
+            <option value="$USER_HOME$/Documents/GitHub/SwiftKit/uicorek" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
           </set>
