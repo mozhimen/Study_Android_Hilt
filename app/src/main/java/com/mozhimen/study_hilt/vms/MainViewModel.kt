@@ -27,7 +27,7 @@ import javax.inject.Inject
 class MainViewModel @AssistedInject constructor(
     private val _cacheRepository: CacheRepository,
     private val _remoteRepository: RemoteRepository,
-    private val _getValueListener: IGetValueListener,
+    private val _getValueListener: IGetValueListener,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         `,
     @Assisted
     private val _strTest: String
 ) : BaseViewModel() {
